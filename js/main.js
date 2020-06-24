@@ -25,8 +25,8 @@ function sleep(ms) {
 
 span.onclick = function() {
     setTimeout(document.execCommand("copy"), 2000);
-    sleep(2000).then(()=>{ span.innerHTML = temp });
-    sleep(4000).then(()=>{ status.classList.add("hidden")});
+    sleep(3000).then(()=>{ span.innerHTML = temp });
+    sleep(3000).then(()=>{ status.classList.add("hidden")});
 }
 
 span.addEventListener("copy", function(event) {
