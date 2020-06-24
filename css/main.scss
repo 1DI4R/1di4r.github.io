@@ -1,0 +1,192 @@
+$colors: (
+    primary: black,
+    secondary: #212121,
+    inprimary: white,
+    bg: white
+);
+
+body, html {
+    height: 100%;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    margin-top: -1px;
+    color: white;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0px;
+    text-align: center;
+    background-color: map-get($map: $colors, $key: bg);
+    .container {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px;
+        display: inline-block;
+        @media screen and (max-width: 480px) {
+            padding: 0px;
+        }
+        .profile {
+            display: inline-block;
+            height: 250px;
+            img {
+                width: 140px;
+                height: 140px;
+                border-radius: 3px;
+            }
+            h2 {
+                margin: 0px;
+                margin-top: 10px;
+                color: map-get($map: $colors, $key: primary);
+            }
+            div {
+                background-color: map-get($map: $colors, $key: primary);
+                color: map-get($map: $colors, $key: inprimary);
+                border-radius: 3px;
+                display: inline-flex;
+                h3 {
+                    font-size: 16px;
+                    margin: 0px;
+                }
+            }
+            p {
+                margin: 0px;
+                margin-top: 10px;
+                margin-bottom: 4px;
+                text-align: center;
+                width: 300px;
+                span {
+                    margin: 0px;
+                }
+                .cursor {
+                    color: map-get($map: $colors, $key: primary);
+                    margin-left: 0.1rem;
+                    animation: blink 1s infinite;
+                }
+                .cursor.typing {
+                    animation: none;
+                }
+                @keyframes blink {
+                    50% {color: transparent;}
+                }
+            }
+        }
+    }
+    
+}
+
+.contact {
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    width: 150px;
+    @media screen and (max-width: 460px) {
+        margin-top: 20px;
+    }
+    a {
+        display: inline-block;
+        margin: 2px;
+        div {
+            border-radius: 4px;
+            display: inline-block;
+            width: auto;
+            padding: 0px 3px;
+            vertical-align: bottom;
+            color: white;
+            &:hover {
+                text-decoration: none;
+                color: map-get($map: $colors, $key: inprimary);
+                background-color: map-get($map: $colors, $key: secondary);
+            }
+            background-color: black;
+            img {
+                width: 16px;
+                height: 16px;
+                background-color: transparent;
+                vertical-align: middle;
+                margin: 3px;
+                display: inline-block;
+            }
+            p {
+                margin: 0px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    .status {
+        display: inline-block;
+        background-color: black;
+        color: #5edd98;
+        margin: 0px 20px;
+        padding: 0px;
+        border-radius: 3px;
+        opacity: 0.8;
+    }
+    .status.hidden {
+        display: none;
+    }
+}
+
+.projects {
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+    h1 {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .box {
+        display: inline-block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        color: map-get($map: $colors, $key: inprimary);
+        border-radius: 4px;
+        background-color: map-get($map: $colors, $key: primary);
+        padding: 1px;
+        text-align: center; 
+        width: 302px;
+        margin: 20px;
+        .title {
+            text-decoration: none;
+            color: white;
+            h3 {
+                margin: 0px;
+                margin-top: 10px;
+                padding: 0px;
+                font-size: 26px;
+            }
+        }
+        img {
+            width: 290px;
+            height: 290px;
+            display: inline-block;
+            margin-top: 5px;
+            border-radius: 4px;
+        }
+        div {
+            margin: 0px;
+            display: inline-block;
+            width: 290px;
+            text-align: left;
+            p {
+                margin-top: 10px;
+                color: #5edd98;
+                height: 80px;
+            }
+            a {
+                display: inline-block;
+                color: white;
+                margin-bottom: 10px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            margin: 0px;
+            margin-top: 25px;
+          }
+    }
+}
+

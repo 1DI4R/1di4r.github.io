@@ -1,0 +1,232 @@
+body, html {
+  height: 100%;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  margin-top: -1px;
+  color: white;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0px;
+  text-align: center;
+  background-color: white;
+}
+
+body .container {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+  body .container {
+    padding: 0px;
+  }
+}
+
+body .container .profile {
+  display: inline-block;
+  height: 250px;
+}
+
+body .container .profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 3px;
+}
+
+body .container .profile h2 {
+  margin: 0px;
+  margin-top: 10px;
+  color: black;
+}
+
+body .container .profile div {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+body .container .profile div h3 {
+  font-size: 16px;
+  margin: 0px;
+}
+
+body .container .profile p {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  text-align: center;
+  width: 300px;
+}
+
+body .container .profile p span {
+  margin: 0px;
+}
+
+body .container .profile p .cursor {
+  color: black;
+  margin-left: 0.1rem;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+body .container .profile p .cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+.contact {
+  margin-top: 50px;
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  width: 150px;
+}
+
+@media screen and (max-width: 460px) {
+  .contact {
+    margin-top: 20px;
+  }
+}
+
+.contact a {
+  display: inline-block;
+  margin: 2px;
+}
+
+.contact a div {
+  border-radius: 4px;
+  display: inline-block;
+  width: auto;
+  padding: 0px 3px;
+  vertical-align: bottom;
+  color: white;
+  background-color: black;
+}
+
+.contact a div:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #212121;
+}
+
+.contact a div img {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  vertical-align: middle;
+  margin: 3px;
+  display: inline-block;
+}
+
+.contact a div p {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact .status {
+  display: inline-block;
+  background-color: black;
+  color: #5edd98;
+  margin: 0px 20px;
+  padding: 0px;
+  border-radius: 3px;
+  opacity: 0.8;
+}
+
+.contact .status.hidden {
+  display: none;
+}
+
+.projects {
+  margin: 0px;
+  display: inline-block;
+  text-align: center;
+}
+
+.projects h1 {
+  margin: 0px;
+  margin-top: 50px;
+}
+
+.projects .box {
+  display: inline-block;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 4px;
+  background-color: black;
+  padding: 1px;
+  text-align: center;
+  width: 302px;
+  margin: 20px;
+}
+
+.projects .box .title {
+  text-decoration: none;
+  color: white;
+}
+
+.projects .box .title h3 {
+  margin: 0px;
+  margin-top: 10px;
+  padding: 0px;
+  font-size: 26px;
+}
+
+.projects .box img {
+  width: 290px;
+  height: 290px;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.projects .box div {
+  margin: 0px;
+  display: inline-block;
+  width: 290px;
+  text-align: left;
+}
+
+.projects .box div p {
+  margin-top: 10px;
+  color: #5edd98;
+  height: 80px;
+}
+
+.projects .box div a {
+  display: inline-block;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .projects .box {
+    margin: 0px;
+    margin-top: 25px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
